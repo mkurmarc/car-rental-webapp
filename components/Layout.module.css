@@ -1,0 +1,25 @@
+.nav__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__left-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__right-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav__logo {
+  width: 2rem;
+  height: 2rem;
+}
+
+.nav__flag {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1em;
+}
