@@ -1,25 +1,49 @@
-.nav__container {
+.navContainer {
   display: flex;
-  justify-content: space-around;
+  flex-basis: 100%;
+  height: 6em;
+  font-size: 1rem;
 }
 
-.nav__left-container {
+.navLeftContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 50%;
 }
 
-.nav__right-container {
+.navRightContainer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-basis: 50%;
 }
 
-.nav__logo {
-  width: 2rem;
-  height: 2rem;
+.navAnchor {
+  text-decoration: none;
+  color: #000000;
 }
 
-.nav__flag {
-  width: 2rem;
-  height: 2rem;
+.navAnchor:hover {
+  color: blueviolet;
+}
+
+.navLogo {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.navFlag {
+  width: 2.25em;
+  height: 2.25em;
   border-radius: 1em;
+}
+
+.navBtn {
+  background-color: #e2fb87;
+  color: #000000;
+  border: none;
+  width: 10em;
+  height: 2.25em;
+  border-radius: 10px;
 }

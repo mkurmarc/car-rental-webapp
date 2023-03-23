@@ -6,34 +6,46 @@ import carRentalLogo from "../public/images/logo-car-rental.png";
 
 const Navbar = (): JSX.Element => {
   return (
-    <nav className={`${styles["nav__container"]}`}>
-      <div className={`${styles["nav__left-container"]}`}>
+    <nav className={styles.navContainer}>
+      <div className={styles.navLeftContainer}>
         <Image
-          className={`${styles["nav__logo"]}`}
+          className={styles.navLogo}
           src={carRentalLogo}
           alt="car rental company logo"
           priority
         />
         <p>
-          <a href="">Rental</a>
+          <a className={styles.navAnchor} href="">
+            Rental
+          </a>
         </p>
         <p>
-          <a href="car-rentals">Car Rental</a>
+          <a className={styles.navAnchor} href="car-rentals">
+            Car Rental
+          </a>
         </p>
         <p>
-          <a href="">Carpool</a>
+          <a className={styles.navAnchor} href="">
+            Carpool
+          </a>
         </p>
       </div>
-      <div className={`${styles["nav__right-container"]}`}>
+      <div className={styles.navRightContainer}>
         <p>
-          <a href="">Login</a>
+          <a className={styles.navAnchor} href="">
+            Login
+          </a>
         </p>
         <p>
-          <a href="">Car Rental</a>
+          <a className={styles.navAnchor} href="">
+            Sign Up
+          </a>
         </p>
-        <button>Sign Up</button>
+        <button type="submit" className={styles.navBtn}>
+          Rent Your Car
+        </button>
         <Image
-          className={`${styles["nav__flag"]}`}
+          className={styles.navFlag}
           src={britishFlag}
           alt="car rental company logo"
           priority
