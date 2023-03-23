@@ -25,7 +25,7 @@
 }
 
 .navAnchor:hover {
-  color: blueviolet;
+  color: #8a2be2;
 }
 
 .navLogo {
@@ -43,7 +43,19 @@
   background-color: #e2fb87;
   color: #000000;
   border: none;
-  width: 10em;
-  height: 2.25em;
   border-radius: 10px;
+  padding: 0.4em 2em; /* use em for padding; if font size changes, the button will change with it */
+  cursor: pointer;
+  text-decoration: none;
+  /* box-shadow: 0 0 0.5em 0 #e2fb87; //better for dark backgrounds   */
+  /* text-shadow: #000000 5px 0 15px, #e2fb87 1px 0 10px; //better for dark backgrounds */
+}
+
+.navBtn:hover {
+  background: rgba(179, 222, 139, 0.483);
+  background: linear-gradient(
+    0deg,
+    rgba(179, 222, 139, 0.483) 0%,
+    rgb(227, 245, 177) 100%
+  );
 }
