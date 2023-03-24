@@ -2,7 +2,7 @@ import Image from "next/image";
 import landingPageImage from "../public/images/car-rental-landing-page-combined.png";
 import bgDrawnLine from "../public/images/drawn-line-background-car-rental.png";
 import Layout from "../components/Layout";
-import styles from "./Home.module.css";
+import styles from "../styles/Home.module.css";
 
 const Home = (): JSX.Element => {
   return (

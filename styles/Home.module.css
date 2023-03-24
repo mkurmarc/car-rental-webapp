@@ -1,9 +1,17 @@
-/* Mobile */
-/* @media (max-width: 700px) {
-  
-} */
+.sectionContainer {
+  display: flex;
+  padding: 4em;
+  outline: 2px solid black;
+}
 
-/* Tablet and Smaller Desktop */
-/* @media (min-width: 701px) and (max-width: 1120px) {
+.bgWrap {
+  position: fixed;
+  left: 19rem;
+  bottom: 1rem;
+  overflow: hidden;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
 
-} */
+.landingPageImg {
+}
