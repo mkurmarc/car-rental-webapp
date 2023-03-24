@@ -1,0 +1,19 @@
+.sectionContainer {
+  display: flex;
+  padding: 4em;
+}
+
+.bgWrap {
+  position: fixed;
+  top: 5em;
+  left: 40rem;
+  width: 47vw;
+  height: 47vh;
+  z-index: -1;
+  object-fit: contain;
+  /* overflow: hidden; */
+}
+
+.landingImage {
+  padding: 4em;
+}

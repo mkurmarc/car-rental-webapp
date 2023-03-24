@@ -1,8 +1,7 @@
 import Image from "next/image";
-import styles from "./Layout.module.css";
-import landingPageImage from "../public/images/car-rental-landing-page-combined.png";
-import britishFlag from "../public/images/british-flag-logo.png";
-import carRentalLogo from "../public/images/logo-car-rental.png";
+import styles from "@/styles/Layout.module.css";
+import britishFlag from "@/public/images/british-flag-logo.png";
+import carRentalLogo from "@/public/images/logo-car-rental.png";
 
 const Navbar = (): JSX.Element => {
   return (

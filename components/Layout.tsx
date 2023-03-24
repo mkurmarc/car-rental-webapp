@@ -16,7 +16,17 @@ const Layout = ({ children }: PropsWithChildren): JSX.Element => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>{children}</main>
+      <main
+        style={{
+          border: "black solid 1px",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-evenly",
+          alignItems: "flex-end",
+        }}
+      >
+        {children}
+      </main>
       <Footer />
     </div>
   );
