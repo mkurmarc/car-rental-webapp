@@ -2,27 +2,24 @@ import Image from "next/image";
 import landingPageImage from "../public/images/car-rental-landing-page-combined.png";
 import bgDrawnLine from "../public/images/drawn-line-background-car-rental.png";
 import Layout from "../components/Layout";
-import styles from "pages/Layout.module.css";
+import styles from "./Home.module.css";
 
 const Home = (): JSX.Element => {
   return (
     <Layout>
       <section className={styles.sectionContainer}>
-        <Image
-          className={styles.sectionContainerBig}
-          src={landingPageImage}
-          alt="landing page image"
-          width={180}
-          height={37}
-          priority
-        />
-        <Image
-          src={bgDrawnLine}
-          alt="background image"
-          width={180}
-          height={37}
-          priority
-        />
+        <div className={styles.bgWrap}>
+          <Image src={bgDrawnLine} alt="background" priority />
+        </div>
+        <div>
+          <Image
+            className={styles.sectionContainerBig}
+            src={landingPageImage}
+            placeholder="blur"
+            alt="landing page image"
+            priority
+          />
+        </div>
       </section>
     </Layout>
   );

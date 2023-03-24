@@ -1,0 +1,17 @@
+.sectionContainer {
+  display: flex;
+  padding: 4em;
+  outline: 2px solid black;
+}
+
+.bgWrap {
+  position: fixed;
+  left: 19rem;
+  bottom: 1rem;
+  overflow: hidden;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+.landingPageImg {
+}
