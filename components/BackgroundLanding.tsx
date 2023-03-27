@@ -9,14 +9,6 @@ const BackgroundLanding = (): JSX.Element => {
       <div className={styles.bgWrap}>
         <Image src={bgDrawnLine} alt="background" fill quality={70} />
       </div>
-      <div className={styles.bgWrap} style={{ left: "0", top: "15rem" }}>
-        <Image
-          src={landingImage}
-          placeholder="blur"
-          alt="landing page image"
-          priority
-        />
-      </div>
     </section>
   );
 };

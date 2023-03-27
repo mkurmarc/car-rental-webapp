@@ -3,6 +3,7 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import styles from "@/styles/Home.module.css";
 import BackgroundLanding from "@/components/BackgroundLanding";
+import landingImage from "@/public/images/car-rental-landing-page-combined.png";
 
 type InputEvent = React.ChangeEvent<HTMLInputElement>;
 type ChangeEventHandler = React.ChangeEventHandler<HTMLInputElement>;
@@ -25,6 +26,14 @@ const Home = (): JSX.Element => {
 
   return (
     <Layout>
+      <div className={styles.bgWrap} style={{ left: "0", top: "15rem" }}>
+        <Image
+          src={landingImage}
+          placeholder="blur"
+          alt="landing page image"
+          priority
+        />
+      </div>
       <h1>Share a car and help take care of the planet</h1>
       <form onSubmit={onSubmitHandler}>
         <input
