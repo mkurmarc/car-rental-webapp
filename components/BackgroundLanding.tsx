@@ -1,5 +1,4 @@
 import Image from "next/image";
-import landingImage from "@/public/images/car-rental-landing-page-combined.png";
 import bgDrawnLine from "@/public/images/drawn-line-background-car-rental.png";
 import styles from "@/styles/Background.module.css";
 

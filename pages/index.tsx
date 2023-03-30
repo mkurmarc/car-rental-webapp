@@ -26,39 +26,68 @@ const Home = (): JSX.Element => {
 
   return (
     <Layout>
-      <div className={styles.bgWrap} style={{ left: "0", top: "15rem" }}>
-        <Image
-          src={landingImage}
-          placeholder="blur"
-          alt="landing page image"
-          priority
-        />
-      </div>
-      <h1>Share a car and help take care of the planet</h1>
-      <form onSubmit={onSubmitHandler}>
-        <input
-          id="locationInput"
-          type="text"
-          placeholder="Los Angeles, CA"
-          onChange={onChangeHandler}
-          autoFocus
-        />
-        <input type="datetime-local" name="pickupDate" id="pickupDate" />
-        <input type="datetime-local" name="dropoffDate" id="dropoffDate" />
-
-        <button type="submit">Search Car</button>
-      </form>
-      <h3>More efficient mobility possible.</h3>
-      <p>
-        25% of CO2 emissions come from transport and the number of cars on the
-        streets increases every day.
-      </p>
-      <p>
-        Our main mission is to help improve the environment and create more
-        efficient and sustainable mobility. For this reason, we offer 3
-        different solutions that allow you to share a car with family and
-        friends.
-      </p>
+      <section className={styles.sectionWrap}>
+        <div className={styles.sectionElem}>
+          <Image
+            src={landingImage}
+            className={styles.landingPageImg}
+            placeholder="blur"
+            alt="landing page image"
+            width="700"
+            height="875"
+            quality="80"
+            priority
+          />
+        </div>
+        <div className={styles.sectionElem}>
+          <h1 className={styles.sectionHeader}>
+            Share a car and help take care of the planet
+          </h1>
+          <div className={styles.formWrap}>
+            <form className={styles.form} onSubmit={onSubmitHandler}>
+              <div className={styles.flexCol}>
+                <label htmlFor="locationInput">Where do you need a car</label>
+                <input
+                  id="locationInput"
+                  name="locationInput"
+                  type="text"
+                  placeholder="Los Angeles, CA"
+                  onChange={onChangeHandler}
+                  autoFocus
+                />
+              </div>
+              <div className={styles.flexCol}>
+                <label htmlFor="pickupDate">Pickup</label>
+                <input
+                  type="datetime-local"
+                  name="pickupDate"
+                  id="pickupDate"
+                />
+              </div>
+              <div className={styles.flexCol}>
+                <label htmlFor="returnDate">Return</label>
+                <input
+                  type="datetime-local"
+                  name="returnDate"
+                  id="returnDate"
+                />
+              </div>
+              <button type="submit">Search Car</button>
+            </form>
+          </div>
+          <h3>More efficient mobility possible.</h3>
+          <p>
+            25% of CO2 emissions come from transport and the number of cars on
+            the streets increases every day.
+          </p>
+          <p>
+            Our main mission is to help improve the environment and create more
+            efficient and sustainable mobility. For this reason, we offer 3
+            different solutions that allow you to share a car with family and
+            friends.
+          </p>
+        </div>
+      </section>
       <BackgroundLanding />
     </Layout>
   );

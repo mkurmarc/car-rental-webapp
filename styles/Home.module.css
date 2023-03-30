@@ -1,0 +1,43 @@
+.landingPageImg {
+  padding: 4em 3em;
+}
+
+.sectionWrap {
+  display: flex;
+}
+
+.sectionElem {
+  flex-basis: 50%;
+}
+
+.sectionElem:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  /* justify-content: space-around; */
+}
+
+.sectionHeader {
+  font-size: 4em;
+}
+
+.formWrap {
+  height: 8em;
+  width: 50em;
+  background-color: #252c00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5em;
+  color: white;
+  /* align-self: flex-start; */
+}
+
+.form {
+  display: flex;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
